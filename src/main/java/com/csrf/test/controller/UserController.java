@@ -15,12 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class UserController {
 
-	@GetMapping("/user")
-	@ResponseBody
-	public Principal user(Principal user) {
-		return user;
-	}
-
 	@GetMapping("/somepath")
 	@ResponseBody
 	public ResponseEntity<?> home() {
